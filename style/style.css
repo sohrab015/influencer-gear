@@ -10,7 +10,7 @@
         "wdth" 100;
 }
 
-body {
+header, main {
     max-width: 1080px;
     margin: 0 auto;
 }
@@ -179,6 +179,58 @@ nav li a {
     margin-top: 12px;
 }
 
+.see-more {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: rgba(224, 44, 109, 0.87);
+    text-align: end;
+}
+
+/* footer banner section */
+.footer-banner {
+    display: flex;
+    gap: 72px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.footer-banner-container h2 {
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+/* footer section */
+footer{
+    background-color: #0A0826;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 70px;
+    padding-top: 50px;
+}
+
+.footer-icon img{
+    width: 24px;
+    filter: brightness(0) invert(1);
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.footer-title{
+    color: white;
+    margin-bottom: 0;
+    font-size: 1.13rem;
+    font-weight: bold;
+}
+
+.footer-des{
+    color: rgba(217, 219, 225, 1);
+    font-size: 0.65rem;
+    font-weight: bold;
+}
+
 
 
 
@@ -259,6 +311,26 @@ nav li a {
         grid-template-columns: 1fr;
         place-items: center;
     }
+
+    .see-more {
+        margin-right: 70px;
+    }
+
+    /* footer banner section */
+    .footer-banner {
+        flex-direction: column;
+        gap: 72px;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .footer-banner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 80%;
+    }
 }
 
 
@@ -323,5 +395,26 @@ nav li a {
     .card-main-container {
         grid-template-columns: repeat(2, 1fr);
         place-items: center;
+    }
+
+    .see-more {
+        text-align: start;
+        margin-left: 60px;
+    }
+
+    /* footer banner section */
+    .footer-banner {
+        flex-direction: column;
+        gap: 72px;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .footer-banner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 80%;
     }
 }
