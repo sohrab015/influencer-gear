@@ -15,6 +15,11 @@ body {
     margin: 0 auto;
 }
 
+main {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
 section {
     margin-top: 80px;
 }
@@ -87,6 +92,18 @@ nav li a {
     align-items: center;
 }
 
+/* sponsors style */
+.sponsor {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsor img {
+    margin: 0;
+}
+
 
 
 
@@ -130,7 +147,8 @@ nav li a {
 
     .hero-img {
         order: 1;
-        width: 70vw;  /* auto scale */
+        width: 70vw;
+        /* auto scale */
         max-width: 250px;
         margin: 0 auto;
 
@@ -143,12 +161,23 @@ nav li a {
         height: auto;
         display: block;
     }
+
+    /* sponsors style */
+    .sponsor {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        gap: 20px;
+        margin: 50px auto;
+        max-width:70%;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
 
 /* === for medium device === */
 @media screen and (min-width: 577px) and (max-width: 992px) {
+
     /* nav section */
     .nav-container {
         max-width: 85vw;
@@ -170,7 +199,8 @@ nav li a {
 
     .hero-img {
         order: 1;
-        width: 90vw;  /* auto scale */
+        width: 90vw;
+        /* auto scale */
         max-width: 400px;
         margin: 0 auto;
 
@@ -182,5 +212,15 @@ nav li a {
         width: 100%;
         height: auto;
         display: block;
+    }
+
+    /* sponsor */
+    .sponsor {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        gap: 20px;
+        margin: 50px auto;
+        max-width:70%;
+        justify-content: center;
+        align-items: center;
     }
 }
